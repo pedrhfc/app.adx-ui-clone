@@ -1,0 +1,85 @@
+[
+  { "text": "Selecione a unidade", "value": null },
+  {
+    "label": "Graduação",
+    "options": [
+      { "text": "Almenara", "value": "Almenara" },
+      { "text": "Carangola", "value": "Carangola" },
+      { "text": "Caratinga", "value": "Caratinga" },
+      { "text": "Cataguases", "value": "Cataguases" },
+      { "text": "Guarapari", "value": "Guarapari" },
+      { "text": "Iúna", "value": "Iúna" },
+      { "text": "Ipatinga", "value": "Ipatinga" },
+      { "text": "João Monlevade ", "value": "João Monlevade" },
+      { "text": "Juiz de Fora Centro ", "value": "Juiz de Fora Centro" },
+      {
+        "text": "Juiz de Fora Itamar Franco",
+        "value": "Juiz de Fora Itamar Franco"
+      },
+      {
+        "text": "Juiz de Fora Zona Norte ",
+        "value": "Juiz de Fora Zona Norte"
+      },
+      { "text": "Leopoldina", "value": "Leopoldina" },
+      { "text": "Manhuaçu", "value": "Manhuaçu" },
+      { "text": "Serra", "value": "Serra" },
+      { "text": "Sete Lagoas", "value": "Sete Lagoas" },
+      { "text": "Teófilo Otoni ", "value": "Teófilo Otoni" },
+      { "text": "Vila Velha ", "value": "Vila Velha" },
+      { "text": "Vitória", "value": "Vitória" }
+    ]
+  },
+  {
+    "label": "Colégio",
+    "options": [
+      { "text": "C. E. Construindo", "value": "C. E. Construindo" },
+      { "text": "Caratinga", "value": "Caratinga" },
+      { "text": "Colégio Centec", "value": "Colégio Centec" },
+      { "text": "Colégio Guarapari", "value": "Colégio Guarapari" },
+      { "text": "Colégio JK", "value": "Colégio JK" },
+      { "text": "Colégio Liber", "value": "Colégio Liber" },
+      { "text": "Colégio Pingo de Gente", "value": "Colégio Pingo de Gente" },
+      { "text": "Colégio Serra", "value": "Colégio Serra" },
+      { "text": "Colégio Vila Velha", "value": "Colégio Vila Velha" },
+      { "text": "Colégio Vitória", "value": "Colégio Vitória" },
+      { "text": "Doctum", "value": "Doctum" },
+      {
+        "text": "Escola Liber - Caratinga",
+        "value": "Escola Liber - Caratinga"
+      },
+      { "text": "Pingo de Gente", "value": "Pingo de Gente" },
+      { "text": "Técnico EAD", "value": "Técnico EAD" }
+    ]
+  },
+  {
+    "label": "Pós-graduação e Educação Continuada",
+    "options": [
+      { "text": "Carangola", "value": "Carangola" },
+      { "text": "Caratinga", "value": "Caratinga" },
+      { "text": "Cataguases", "value": "Cataguases" },
+      { "text": "Guarapari", "value": "Guarapari" },
+      { "text": "Iúna", "value": "Iúna" },
+      { "text": "Ipatinga", "value": "Ipatinga" },
+      { "text": "João Monlevade ", "value": "João Monlevade" },
+      { "text": "Juiz de Fora ", "value": "Juiz de Fora" },
+      { "text": "Leopoldina", "value": "Leopoldina" },
+      { "text": "Manhuaçu", "value": "Manhuaçu" },
+      { "text": "Pós Unificada", "value": "Pós Unificada" },
+      { "text": "Serra", "value": "Serra" },
+      { "text": "Teófilo Otoni ", "value": "Teófilo Otoni" },
+      { "text": "Vila Velha ", "value": "Vila Velha" },
+      { "text": "Vitória", "value": "Vitória" }
+    ]
+  },
+  {
+    "label": "Educação à Distância",
+    "options": [{ "text": "Doctum EAD", "value": "Doctum EAD" }]
+  },
+  {
+    "label": "Mestrado",
+    "options": [
+      { "text": "Juiz de Fora ", "value": "Juiz de Fora" },
+      { "text": "Vitória", "value": "Vitória" }
+    ]
+  }
+]
