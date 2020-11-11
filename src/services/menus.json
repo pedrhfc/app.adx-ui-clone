@@ -1,0 +1,38 @@
+[
+  {
+    "icon": "house",
+    "title": "Início",
+    "layout": "/logado",
+    "path": "home"
+  },
+  {
+    "icon": "briefcase",
+    "title": "Próximos trabalhos",
+    "layout": "/logado",
+    "path": "proximos-trabalhos"
+  },
+  {
+    "icon": "clock-history",
+    "title": "Grade Horária",
+    "layout": "/logado",
+    "path": "grade-horaria"
+  },
+  {
+    "icon": "clipboard-data",
+    "title": "Notas e Frequências",
+    "layout": "/logado",
+    "path": "notas"
+  },
+  {
+    "icon": "calendar",
+    "title": "Calendário",
+    "layout": "/logado",
+    "path": "calendario"
+  },
+  {
+    "icon": "wallet",
+    "title": "Financeiro",
+    "layout": "/logado",
+    "path": "financeiro"
+  }
+]
