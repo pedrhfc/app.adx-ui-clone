@@ -11,7 +11,7 @@
         <b-nav-item
           ><span class="text-primary"
             >Centro Universitário Doctum de {{ unidade }} » {{ unidade
-            }}<br />MATRÍCULA ({{ matricula }})</span
+            }}<br />{{ name }} - MATRÍCULA ({{ matricula }})</span
           ></b-nav-item
         >
       </b-navbar-nav>
@@ -24,7 +24,9 @@
               Minha conta
             </span>
           </template>
-          <b-dropdown-item>Perfil</b-dropdown-item>
+          <b-dropdown-item @click="goTo('Access')"
+            >Gerir acessos</b-dropdown-item
+          >
           <b-dropdown-item @click="logout">Sair</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
@@ -44,9 +46,14 @@ import {
   BImg,
   VBToggle,
 } from "bootstrap-vue";
+
 export default {
   name: "app-navbar",
   props: {
+    name: {
+      type: String,
+      default: "",
+    },
     matricula: {
       type: String,
       default: "",
@@ -75,7 +82,10 @@ export default {
   },
   methods: {
     logout() {
-      this.$emit("user:logout");
+      this.$emit("logout:user");
+    },
+    goTo(path) {
+      this.$emit("change:path", path);
     },
   },
 };

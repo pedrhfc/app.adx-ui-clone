@@ -3,6 +3,8 @@ import Work from "@/views/Work";
 import Schedule from "@/views/Schedule";
 import Grades from "@/views/Grades";
 import Calendar from "@/views/Calendar";
+import Access from "@/views/Access";
+import FormAccess from "@/views/Access/form";
 import NotFound from "@/views/Pages/notFound";
 
 import AppLayout from "@/layouts/App";
@@ -20,15 +22,35 @@ const routes = [
         component: () =>
           import(/* webpackChunkName: "login" */ "@/views/Login"),
       },
+      {
+        path: "/pedir-acesso",
+        name: "NoAccess",
+        component: () =>
+          import(/* webpackChunkName: "no-access" */ "@/views/Pages/noAccess"),
+      },
     ],
   },
   {
     path: "/logado",
     component: AppLayout,
+    meta: {
+      requiresAuth: true,
+    },
     children: [
       {
         path: "home",
+        name: "Home",
         component: Home,
+      },
+      {
+        path: "gerir-acessos",
+        name: "Access",
+        component: Access,
+      },
+      {
+        path: "gerir-acessos/:id/editar",
+        name: "FormAccess",
+        component: FormAccess,
       },
       {
         path: "home/:unidade/:matricula",

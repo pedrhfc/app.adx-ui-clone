@@ -3,8 +3,10 @@
     <app-navbar
       :matricula="matricula"
       :unidade="unidade"
+      :name="name"
       :logoImg="adxLogo"
-      @user:logout="logout"
+      @logout:user="logout"
+      @change:path="goTo"
     />
     <div class="mt-3 col-10">
       <router-view></router-view>
@@ -17,6 +19,9 @@ import { Navbar, Sidebar } from "@/components/";
 import menus from "@/services/menus.json";
 import logoImg from "@/assets/img/doctum_logo.png";
 import adxLogo from "@/assets/img/logo_ADX.png";
+
+import { getUser, signOut } from "@/services/auth";
+
 export default {
   components: {
     "app-navbar": Navbar,
@@ -26,17 +31,22 @@ export default {
     return {
       logoImg,
       adxLogo,
-      matricula: this.$route.params.matricula,
-      unidade: this.$route.params.unidade,
+      matricula: getUser().registration,
+      unidade: getUser().unit,
+      name: getUser().name,
       menus,
     };
   },
   methods: {
     logout() {
-      this.$router.push("/login");
+      signOut();
+      this.$router.push({ name: "Login" });
     },
     handleMenu(path) {
       this.$router.push(path);
+    },
+    goTo(path) {
+      this.$router.push({ name: path });
     },
   },
 };
